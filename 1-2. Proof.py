@@ -26,6 +26,8 @@ def Hypersphere_ECC(c):
 
     return output
 
+#생성된 data들을 확인하는 과정
+
 input_w = torch.load("gen_w.tensor")
 input_P = torch.load("gen_P.tensor")
 input_r = torch.load("gen_r.tensor")

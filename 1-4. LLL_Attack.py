@@ -29,9 +29,7 @@ def Hypersphere_ECC(c):
 
 
 
-#dimension = 64
-# n = 4
-# 2 * lattice_P * input_c => c2?
+# 4 * P_LLL * c1 = c2?
 
 input_P = torch.load("P_Reduction.tensor")
 input_w1 = torch.load("gen_w1.tensor")
@@ -53,6 +51,7 @@ c2 = Hypersphere_ECC(c2)
 
 Proof = torch.mm(input_P, c1)
 Proof *= 4
+print(Proof)
 
 print(c2 == Proof)
 

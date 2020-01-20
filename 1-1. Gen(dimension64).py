@@ -138,10 +138,9 @@ def Hypersphere_ECC(c):
 
     return output
 
-dimension = 64
-# n = 4
-# 2 * lattice_P * input_c => c2?
+# W g
 
+dimension = 64
 gen_w = np.random.randn(dimension)
 gen_w = torch.FloatTensor(gen_w)
 print(gen_w)
