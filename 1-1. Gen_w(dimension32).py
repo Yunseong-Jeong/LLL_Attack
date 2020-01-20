@@ -130,9 +130,9 @@ def Hypersphere_ECC(c):
 
     for i in range(4):
         if c[0, ind[0, i]] >= 0:
-            output[ind[0, i]] = 0.2500
+            output[ind[0, i]] = 0.5
         else:
-            output[ind[0, i]] = -0.2500
+            output[ind[0, i]] = -0.5
 
     output = output.reshape(-1, 1)
 
